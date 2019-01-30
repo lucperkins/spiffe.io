@@ -50,28 +50,40 @@ $navbar-dropdown-radius: none
     top: 4rem
 
   #TableOfContents
-    > ul > li > ul > li
-      line-height: 100%
-      font-size: .9rem
+    > ul > li
+      margin-bottom: .8rem
 
       > a
+        color: $grey-dark
         font-weight: bold
+        font-size: 1.1rem
+        margin-top: 1rem
+
+        & + ul
+          margin-top: .75rem
 
       > ul > li
-        padding: 5px 0 0 10px
+        line-height: 100%
+        font-size: .9rem
 
         > a
-          font-weight: 0
-        
-        > ul > li 
-          padding-left: 15px
-          font-size: 0.8em
+          font-weight: bold
 
-      a
-        color: $grey-dark
+        > ul > li
+          padding: 5px 0 0 10px
 
-      & + li
-        margin-top: .75rem
+          > a
+            font-weight: 0
+          
+          > ul > li 
+            padding-left: 15px
+            font-size: 0.8em
+
+        a
+          color: $grey-dark
+
+        & + li
+          margin-top: .75rem
 
 .is-logo-button
   .icon img
